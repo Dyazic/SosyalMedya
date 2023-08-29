@@ -84,6 +84,7 @@ export default function CommentScreen() {
                     />
                     : 
                     <View>
+                        
                     <Text style={appStyle.menuText}>Liste Gelmedi</Text>
                     </View>
                     }

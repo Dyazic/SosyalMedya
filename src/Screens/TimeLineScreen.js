@@ -167,9 +167,23 @@ export default function TimeLineScreen() {
                         )}
                     />
                     : 
-                    <View>
-                    <Text style={appStyle.menuText}>Liste Gelmedi</Text>
-                    </View>
+                    <View style={appStyle.timeLineContainer}>
+                                <Text style={appStyle.sharingText}>{userName}</Text>
+                                <TextInput
+                                    multiline={true}
+                                    numberOfLines={5}
+                                    style={appStyle.sharingInput}
+                                    onChangeText={setDescription}
+                                    value={descriptinon}
+                                    placeholder="Paylaş..."
+                                    keyboardType='twitter'
+                                />
+                                <TouchableOpacity style={appStyle.followButtonStyle}
+                                    onPress={() => share()}
+                                >
+                                    <Text style={appStyle.buttonText}>Paylaş</Text>
+                                </TouchableOpacity>
+                            </View>
                     }
             </View>
         </SafeAreaView>

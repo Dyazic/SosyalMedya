@@ -85,7 +85,7 @@ export default function AllUsersScreen() {
                         )}
                     />
                     : <View>
-                    <Text style={appStyle.menuText}>Liste Gelmedi</Text>
+                    <Text style={appStyle.menuText}>Listelenecek Kullaıcı Yok</Text>
                     </View>}
             </View>
         </SafeAreaView>

@@ -91,6 +91,7 @@ export const appStyle = StyleSheet.create({
     backgroundColor: color.cardBackGroundColor,
     alignItems: "flex-start",
     borderRadius: 5,
+    maxHeight:250,
   },
   commentInput: {
     fontFamily:'Nunito-VariableFont_wght',
